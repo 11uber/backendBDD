@@ -1,0 +1,85 @@
+### MongoDB
+POST http://localhost:9000/api/pedidos HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_pedido": "4",
+    "id_cliente":"7",
+    "producto": "Jabon Zote mediano",
+    "estatus": "En proceso"
+}
+
+###
+GET http://localhost:9000/api/pedidos HTTP/1.1
+
+###
+GET http://localhost:9000/api/pedidos/<id> HTTP/1.1
+
+###
+PUT http://localhost:9000/api/pedidos/63fead07aabbf6370b3c56ab HTTP/1.1
+Content-Type: application/json
+
+{
+    //"id_pedido": "3",
+    //"id_cliente":"5",
+    //"producto": "Jabon Zote grande",
+    "estatus": "Entregado"
+}
+
+###
+DELETE http://localhost:9000/api/pedidos/<id> HTTP/1.1
+
+
+
+### Productos---------------------------------------------------------------------------------------------------------
+POST http://localhost:9000/api/productos HTTP/1.1
+Content-Type: application/json
+
+{
+    "producto": "Fuze tea durazno",
+    "precio": "18.20",
+    "categoria":"Alimentos"
+}
+
+###
+GET http://localhost:9000/api/productos HTTP/1.1
+
+###
+GET http://localhost:9000/api/productos/<id> HTTP/1.1
+
+###
+PUT http://localhost:9000/api/productos/<id> HTTP/1.1
+Content-Type: application/json
+
+{
+    "producto": "",
+    "precio": "",
+    "categoria":""
+}
+
+###
+DELETE http://localhost:9000/api/productos/64095875d285094175f924e5 HTTP/1.1
+
+### MySQL-------------------------------------------------------------------------------------------------------------
+GET http://localhost:9000/api/usuarios HTTP/1.1
+
+###
+POST http://localhost:9000/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_name": "Evesmax",
+    "user_pass": "Univarr98."
+}
+
+###
+DELETE http://localhost:9000/api/usuarios/<id> HTTP/1.1
+
+###
+PUT http://localhost:9000/api/usuarios/<id> HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_name": "",
+    "user_pass": ""
+}
